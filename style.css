@@ -76,7 +76,7 @@ nav {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 1rem 2rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +87,16 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+}
+
+.logo img {
+    height: 30px; /* Adjust to match your emoji size - try 25px, 30px, or 35px */
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-links {
