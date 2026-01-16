@@ -93,7 +93,7 @@ nav {
 }
 
 .logo img {
-    height: 30px; /* Adjust to match your emoji size - try 25px, 30px, or 35px */
+    height: 80px; 
     width: auto;
     display: block;
     object-fit: contain;
