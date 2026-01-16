@@ -89,18 +89,6 @@ nav {
     color: var(--light-blue);
 }
 
-.logo img {
-    height: 120px; /* Adjust this value based on your nav height */
-    width: auto; /* Maintains aspect ratio */
-    display: block;
-}
-
-/* If you want to add some hover effects */
-.logo img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
 .nav-links {
     display: flex;
     gap: 30px;
