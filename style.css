@@ -69,7 +69,7 @@ nav {
     background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 20px 0;
+    padding: 15px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -93,10 +93,10 @@ nav {
 }
 
 .logo img {
-    height: 30px; 
-    width: 30px;
+    height: 50px; /* bigger height */
+    width: auto;  /* keep aspect ratio */
     display: block;
-    object-fit: contain;
+    object-fit: contain; /* makes sure it scales nicely */
 }
 
 .nav-links {
