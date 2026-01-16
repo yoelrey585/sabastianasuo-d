@@ -93,7 +93,7 @@ nav {
 }
 
 .logo img {
-    height: 80px; /* bigger height */
+    height: 50px; /* bigger height */
     width: auto;  /* keep aspect ratio */
     display: block;
     object-fit: contain; /* makes sure it scales nicely */
