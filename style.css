@@ -90,7 +90,7 @@ nav {
 }
 
 .logo img {
-    height: 40px; /* Adjust this value based on your nav height */
+    height: 120px; /* Adjust this value based on your nav height */
     width: auto; /* Maintains aspect ratio */
     display: block;
 }
