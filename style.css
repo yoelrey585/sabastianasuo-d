@@ -122,8 +122,13 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 20px 80px;
+    /*padding: 100px 20px 80px;*/
     gap: 60px;
+
+    /*display: flex;*/
+    justify-content: space-between; /* distributes space between text and image */
+    /*align-items: center;*/           /* vertically centers the items */
+    padding: 50px;  
 }
 
 .hero-content {
