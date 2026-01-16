@@ -95,6 +95,12 @@ nav {
     display: block;
 }
 
+/* If you want to add some hover effects */
+.logo img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
