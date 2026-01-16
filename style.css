@@ -93,8 +93,8 @@ nav {
 }
 
 .logo img {
-    height: 80px; 
-    width: auto;
+    height: 30px; 
+    width: 30px;
     display: block;
     object-fit: contain;
 }
