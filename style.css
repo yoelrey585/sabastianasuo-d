@@ -238,7 +238,7 @@ nav {
     margin-top: 40px;
 }
 
-/* ===== PROJECT CARDS - CONDENSED ===== */
+/* ===== PROJECT CARDS - FIXED IMAGE SIZE ===== */
 .project-card {
     background: var(--nebula);
     border-radius: 16px;
@@ -251,28 +251,51 @@ nav {
 }
 
 .project-image {
-    height: 180px;
+    height: 160px;
     overflow: hidden;
     flex-shrink: 0;
+    background: var(--deep-space);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.3s;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.03);
 }
 
 .project-content {
-    padding: 20px;
+    padding: 18px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .project-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
     line-height: 1.3;
+    color: var(--aurora-cyan);
 }
 
 .project-content p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
     flex: 1;
+    color: var(--star-dust-dim);
+    line-height: 1.5;
+}
+
+.project-links {
+    margin-bottom: 10px;
 }
 
 .project-link {
@@ -281,14 +304,13 @@ nav {
     gap: 5px;
     color: var(--aurora-cyan);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    margin-bottom: 12px;
     transition: gap 0.3s;
 }
 
 .project-link:hover {
-    gap: 10px;
+    gap: 8px;
     color: var(--solar-glow);
 }
 
@@ -296,12 +318,16 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .tag {
     font-size: 0.7rem;
-    padding: 4px 12px;
+    padding: 3px 10px;
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--aurora-cyan);
+    border-radius: 20px;
+    border: 1px solid var(--border-glow);
 }
 
 /* Make sure grid stays 3 columns */
@@ -324,6 +350,7 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
 
 /* ===== ABOUT SECTION ===== */
 .about-container {
