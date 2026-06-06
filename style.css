@@ -238,68 +238,64 @@ nav {
     margin-top: 40px;
 }
 
-/* ===== PROJECTS ===== */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.project-card {
-    background: var(--nebula);
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.3s;
-    border: 1px solid var(--border-glow);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--aurora-cyan);
-    box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
-}
-
-.project-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-content {
-    padding: 20px;
-}
-
-.project-content h3 {
+/* ===== PROJECT CARD ENHANCEMENTS ===== */
+.project-summary {
+    font-weight: 500;
     color: var(--aurora-cyan);
-}
-
-.project-content p {
-    color: var(--star-dust-dim);
     margin-bottom: 15px;
+    font-size: 0.95rem;
 }
 
-.tag {
-    display: inline-block;
-    background: rgba(0, 240, 255, 0.1);
-    color: var(--aurora-cyan);
-    padding: 5px 15px;
-    border-radius: 20px;
+.project-details {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(0, 240, 255, 0.05);
+    border-radius: 12px;
+    border-left: 3px solid var(--aurora-cyan);
+}
+
+.project-details p {
     font-size: 0.85rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--border-glow);
+    margin-bottom: 8px;
+    color: var(--star-dust-dim);
+    line-height: 1.5;
+}
+
+.project-details p:last-child {
+    margin-bottom: 0;
+}
+
+.project-details strong {
+    color: var(--solar-glow);
+    font-weight: 600;
+}
+
+.project-links {
+    margin: 15px 0;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--aurora-cyan);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 8px 0;
+}
+
+.project-link:hover {
+    color: var(--solar-glow);
+    gap: 12px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 /* ===== ABOUT SECTION ===== */
