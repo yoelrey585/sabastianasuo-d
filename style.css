@@ -841,6 +841,28 @@ footer p {
     }
 }
 
+.portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--aurora-cyan);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+    padding-bottom: 2px;
+    margin: 4px 0 32px;
+    transition: color 0.3s, border-color 0.3s, gap 0.3s;
+}
+
+.portfolio-link:hover {
+    color: var(--solar-glow);
+    border-color: rgba(255, 107, 53, 0.5);
+    gap: 10px;
+}
+
 /* --- Mobile: 768px and below --- */
 @media (max-width: 768px) {
     /* nav */
