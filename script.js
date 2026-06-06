@@ -1,4 +1,4 @@
-// Simple smooth scroll for navigation
+// smooth orbit navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simple form submission
+// signal transmission (contact form)
 const form = document.querySelector('form');
 if (form) {
     form.addEventListener('submit', function(e) {
@@ -20,13 +20,11 @@ if (form) {
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         
-        // Show loading state
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> transmitting...';
         submitBtn.disabled = true;
         
-        // Simulate sending
         setTimeout(() => {
-            alert('Message sent! I\'ll get back to you soon.');
+            alert('signal received. i\'ll get back to you soon.');
             form.reset();
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
@@ -34,12 +32,12 @@ if (form) {
     });
 }
 
-// Add active class to nav links on scroll
+// navigation glow effect
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
-        nav.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+        nav.style.backgroundColor = 'rgba(5, 11, 20, 0.98)';
     } else {
-        nav.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
+        nav.style.backgroundColor = 'rgba(5, 11, 20, 0.95)';
     }
 });
