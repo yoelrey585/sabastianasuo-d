@@ -253,6 +253,7 @@ nav.scrolled {
     flex-wrap: wrap;
 }
 
+
 /* orbit indicator */
 .orbit-indicator {
     position: absolute;
@@ -385,6 +386,64 @@ nav.scrolled {
     text-align: center;
     margin-top: 50px;
 }
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Inter', sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 0.03em;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0);
+    transition: background 0.3s;
+}
+
+.btn:hover::before { background: rgba(255,255,255,0.06); }
+
+.btn-primary {
+    background: linear-gradient(135deg, rgba(0,240,255,0.15) 0%, rgba(0,217,255,0.1) 100%);
+    color: var(--aurora-cyan);
+    border: 1px solid rgba(0,240,255,0.4);
+    box-shadow: 0 0 20px rgba(0,240,255,0.08), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.btn-primary:hover {
+    border-color: rgba(0,240,255,0.8);
+    box-shadow: 0 0 30px rgba(0,240,255,0.25), 0 0 60px rgba(0,240,255,0.1);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--star-dust-dim);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-secondary:hover {
+    border-color: rgba(255,107,53,0.5);
+    color: var(--solar-glow);
+    box-shadow: 0 0 20px rgba(255,107,53,0.1);
+    transform: translateY(-2px);
+}
+
 
 /* ===== PROJECTS GRID ===== */
 .projects-grid {

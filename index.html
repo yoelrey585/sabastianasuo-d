@@ -12,6 +12,21 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+.btn-tertiary {
+    background: linear-gradient(135deg, rgba(0,240,255,0.15) 0%, rgba(0,217,255,0.1) 100%);
+    color: var(--aurora-cyan);
+    border: 1px solid rgba(0,240,255,0.4);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,240,255,0.08), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.btn-tertiary:hover {
+    border-color: rgba(0,240,255,0.8);
+    box-shadow: 0 0 30px rgba(0,240,255,0.25), 0 0 60px rgba(0,240,255,0.1);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
 :root {
   --deep-space:    #03080f;
   --nebula:        #0b1120;
@@ -901,6 +916,7 @@ footer p {
   </div>
 </nav>
 
+
 <!-- HERO -->
 <section id="home">
   <div id="hero">
@@ -913,6 +929,7 @@ footer p {
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">view projects</a>
         <a href="#contact-wrap" class="btn btn-secondary">contact me</a>
+        <a href="docs/sabastiancv.pdf" class="btn btn-tertiary" target="_blank">view cv</a>
       </div>
     </div>
     <div class="hero-image">
@@ -931,7 +948,7 @@ footer p {
   <div class="section-header fade-in">
     <h2 class="section-title">my <em>projects</em></h2>
     <div class="section-divider"></div>
-    <p class="section-subtitle" style="margin-top:0.75rem;">exploring the edge of biomedical engineering &amp; design</p>
+    <p class="section-subtitle" style="margin-top:0.75rem;">exploring the edge of biomedical engineering &amp; design. Projects can be found in depth on portfolio site and links attached in cv</p>
   </div>
 
   <div class="projects-grid">
