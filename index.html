@@ -21,8 +21,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="#home" data-num="00">home</a></li>
-      <li><a href="#projects" data-num="01">projects</a></li>
-      <li><a href="#about" data-num="02">about</a></li>
+      <li><a href="#about" data-num="01">about</a></li>
+      <li><a href="#projects" data-num="02">projects</a></li>
       <li><a href="#contact" data-num="03">contact</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="menu">
@@ -35,8 +35,8 @@
 <div class="mobile-menu" id="mobileMenu">
   <ul>
     <li><a href="#home" class="mm-link">home</a></li>
-    <li><a href="#projects" class="mm-link">projects</a></li>
     <li><a href="#about" class="mm-link">about</a></li>
+    <li><a href="#projects" class="mm-link">projects</a></li>
     <li><a href="#contact" class="mm-link">contact</a></li>
   </ul>
 </div>
@@ -47,13 +47,13 @@
 <section id="home" class="hero-section">
   <canvas id="spaceCanvas"></canvas>
 
-  <!-- floating image like EverSwap's mountain -->
+  <!-- floating image — astronaut in space -->
   <div class="hero-planet-wrap">
     <img
-      src="images/profile2.jpg"
-      alt="Sabastian Asuo-Darko"
+      src="images/greenspace.png"
+      alt="Astronaut in space"
       class="hero-planet-img"
-      onerror="this.src='https://placehold.co/520x640/091a0f/4ade80?text=RA'"
+      onerror="this.src='https://placehold.co/520x640/0a1620/4ade80?text=🚀+ASTRONAUT'"
     >
     <div class="hero-planet-glow"></div>
   </div>
@@ -67,14 +67,19 @@
     <h1 class="hero-title">
       the rogue<br><em>astronaut</em>
     </h1>
-    <p class="hero-scroll-hint">scroll to explore ↓</p>
+    <div class="hero-actions">
+      <a href="docs/sabastiancv.pdf" target="_blank" class="hero-cv-btn">
+        <i class="fas fa-file-pdf"></i> view CV
+      </a>
+      <span class="hero-scroll-hint">scroll to explore ↓</span>
+    </div>
   </div>
 
   <!-- side nav dots -->
   <div class="side-nav">
     <a href="#home" class="side-dot active" data-section="home"></a>
-    <a href="#projects" class="side-dot" data-section="projects"></a>
     <a href="#about" class="side-dot" data-section="about"></a>
+    <a href="#projects" class="side-dot" data-section="projects"></a>
     <a href="#contact" class="side-dot" data-section="contact"></a>
   </div>
 </section>
@@ -100,108 +105,26 @@
 </div>
 
 <!-- ═══════════════════════════════════════
-     PROJECTS
-═══════════════════════════════════════ -->
-<section id="projects" class="section">
-  <div class="container">
-
-    <header class="section-head fade-in">
-      <span class="section-eyebrow">01 — transmissions</span>
-      <h2 class="section-title">selected <em>work</em></h2>
-      <p class="section-sub">Engineering meets imagination. Projects live in full detail on the portfolio site.</p>
-    </header>
-
-    <div class="work-list">
-
-      <!-- Project 01 -->
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
-        <div class="work-num">01</div>
-        <div class="work-img-wrap">
-          <img src="images/project1.png" alt="Lung Simulation"
-               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=CFD+Study'">
-          <div class="work-img-overlay"></div>
-        </div>
-        <div class="work-body">
-          <span class="work-category">Engineering · CFD/FEA</span>
-          <h3 class="work-title">Ventilator-Induced<br>Lung Injury Study</h3>
-          <p class="work-desc">CFD-FEA analysis identifying critical pressure thresholds (20–35 cmH₂O) for lung tissue damage. Built in SolidWorks + ANSYS.</p>
-          <div class="work-tags">
-            <span>SolidWorks</span><span>ANSYS</span><span>CFD/FEA</span>
-          </div>
-          <div class="work-cta">view case study <span>→</span></div>
-        </div>
-      </a>
-
-      <!-- Project 02 -->
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
-        <div class="work-num">02</div>
-        <div class="work-img-wrap">
-          <img src="images/project2.png" alt="3D Art"
-               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=3D+Art'">
-          <div class="work-img-overlay"></div>
-        </div>
-        <div class="work-body">
-          <span class="work-category">3D Art · Blender</span>
-          <h3 class="work-title">Blender 3D<br>Project Series</h3>
-          <p class="work-desc">Imaginative 3D scenes and characters — anime environments, original character sculpts, and experimental renders.</p>
-          <div class="work-tags">
-            <span>Blender</span><span>SolidWorks</span><span>Sculpting</span>
-          </div>
-          <div class="work-cta">view case study <span>→</span></div>
-        </div>
-      </a>
-
-      <!-- Project 03 -->
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
-        <div class="work-num">03</div>
-        <div class="work-img-wrap">
-          <img src="images/project3.png" alt="Social Commentary"
-               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=Video'">
-          <div class="work-img-overlay"></div>
-        </div>
-        <div class="work-body">
-          <span class="work-category">Creative · Video</span>
-          <h3 class="work-title">Social Commentary<br>Video Series</h3>
-          <p class="work-desc">Insightful entertainment content transforming viewing into deeper analytical experience through satire and visual storytelling.</p>
-          <div class="work-tags">
-            <span>Premiere Pro</span><span>After Effects</span>
-          </div>
-          <div class="work-cta">view case study <span>→</span></div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- callout -->
-    <div class="callout fade-in">
-      <div class="callout-left">
-        <p class="callout-head">every project,<br><em>in depth</em></p>
-        <p class="callout-sub">Full case studies, process breakdowns, high-res visuals.</p>
-      </div>
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="callout-link">
-        visit portfolio site
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     ABOUT
+     ABOUT — moved before projects
 ═══════════════════════════════════════ -->
 <section id="about" class="section section--dark">
   <div class="container">
 
     <header class="section-head fade-in">
-      <span class="section-eyebrow">02 — signal origin</span>
+      <span class="section-eyebrow">01 — signal origin</span>
       <h2 class="section-title">the rogue <em>astronaut</em></h2>
     </header>
 
     <div class="about-grid">
 
       <div class="about-col-left fade-in">
-        <p class="about-lede">I'm Sabastian — a Biomedical Engineering graduate who operates at the intersection of precision and rebellion. I navigate between 3D design, simulation analysis, and visual storytelling.</p>
+        <p class="about-lede">I'm Sabastian — a Biomedical Engineering graduate who operates at the intersection of precision and rebellion. I balance three worlds: clinical engineering (keeping patients alive, one device at a time), 3D design (building in SolidWorks, ANSYS, and Blender), and visual storytelling (crafting narratives through photo and video editing). I don't just cross disciplines — I weld them together.</p>
+
+        <!-- Profile image in about section -->
+        <div class="about-profile-img-wrap">
+          <img src="images/profile2.jpg" alt="Sabastian Asuo-Darko" class="about-profile-img"
+               onerror="this.src='https://placehold.co/400x500/091a0f/4ade80?text=Sabastian'">
+        </div>
 
         <div class="about-block">
           <h3 class="about-block-title">
@@ -288,6 +211,94 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROJECTS — moved after about
+═══════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="container">
+
+    <header class="section-head fade-in">
+      <span class="section-eyebrow">02 — transmissions</span>
+      <h2 class="section-title">selected <em>work</em></h2>
+      <p class="section-sub">Engineering meets imagination. Projects live in full detail on the portfolio site.</p>
+    </header>
+
+    <div class="work-list">
+
+      <!-- Project 01 -->
+      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
+        <div class="work-num">01</div>
+        <div class="work-img-wrap">
+          <img src="images/project1.png" alt="Lung Simulation"
+               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=CFD+Study'">
+          <div class="work-img-overlay"></div>
+        </div>
+        <div class="work-body">
+          <span class="work-category">Engineering · CFD/FEA</span>
+          <h3 class="work-title">Ventilator-Induced<br>Lung Injury Study</h3>
+          <p class="work-desc">CFD-FEA analysis identifying critical pressure thresholds (20–35 cmH₂O) for lung tissue damage. Built in SolidWorks + ANSYS.</p>
+          <div class="work-tags">
+            <span>SolidWorks</span><span>ANSYS</span><span>CFD/FEA</span>
+          </div>
+          <div class="work-cta">view case study <span>→</span></div>
+        </div>
+      </a>
+
+      <!-- Project 02 -->
+      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
+        <div class="work-num">02</div>
+        <div class="work-img-wrap">
+          <img src="images/project2.png" alt="3D Art"
+               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=3D+Art'">
+          <div class="work-img-overlay"></div>
+        </div>
+        <div class="work-body">
+          <span class="work-category">3D Art · Blender</span>
+          <h3 class="work-title">Blender 3D<br>Project Series</h3>
+          <p class="work-desc">Imaginative 3D scenes and characters — anime environments, original character sculpts, and experimental renders.</p>
+          <div class="work-tags">
+            <span>Blender</span><span>SolidWorks</span><span>Sculpting</span>
+          </div>
+          <div class="work-cta">view case study <span>→</span></div>
+        </div>
+      </a>
+
+      <!-- Project 03 -->
+      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="work-item fade-in">
+        <div class="work-num">03</div>
+        <div class="work-img-wrap">
+          <img src="images/project3.png" alt="Social Commentary"
+               onerror="this.src='https://placehold.co/480x300/091a0f/4ade80?text=Video'">
+          <div class="work-img-overlay"></div>
+        </div>
+        <div class="work-body">
+          <span class="work-category">Creative · Video</span>
+          <h3 class="work-title">Social Commentary<br>Video Series</h3>
+          <p class="work-desc">Insightful entertainment content transforming viewing into deeper analytical experience through satire and visual storytelling.</p>
+          <div class="work-tags">
+            <span>Premiere Pro</span><span>After Effects</span>
+          </div>
+          <div class="work-cta">view case study <span>→</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- callout -->
+    <div class="callout fade-in">
+      <div class="callout-left">
+        <p class="callout-head">every project,<br><em>in depth</em></p>
+        <p class="callout-sub">Full case studies, process breakdowns, high-res visuals.</p>
+      </div>
+      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="callout-link">
+        visit portfolio site
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
   </div>
 </section>
 
