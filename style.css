@@ -1044,6 +1044,94 @@ footer p {
         padding: 22px;
     }
 
+    /* Clinical Engineering Highlight */
+.clinical-highlight {
+  margin: 2.5rem 0 2rem 0;
+  padding: 1.5rem;
+  background: rgba(100, 100, 255, 0.05);
+  border-left: 3px solid rgba(100, 100, 255, 0.3);
+  border-radius: 4px;
+}
+
+.clinical-highlight h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.clinical-desc {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* Clinical Gallery */
+.clinical-gallery {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  aspect-ratio: 4/3;
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  filter: brightness(1.1);
+}
+
+/* Responsive Gallery */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  .gallery-item {
+    aspect-ratio: 4/3;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  
+  .clinical-highlight {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
     /* contact */
     .contact-section {
         margin: 10px;
