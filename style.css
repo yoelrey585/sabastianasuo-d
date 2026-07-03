@@ -866,6 +866,303 @@ ul  { list-style: none; }
 .ext-link:hover { color: var(--accent-bright); padding-left: 6px; }
 
 /* ════════════════════════════════════════════
+   NEW — THREE WORLDS (Signal Origin)
+════════════════════════════════════════════ */
+.three-worlds {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.world-card {
+  background: var(--space-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.world-card:hover { border-color: var(--border-bright); }
+
+.world-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-bright);
+}
+
+.world-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--accent-bright);
+  margin-bottom: 0.5rem;
+}
+
+.world-card p {
+  font-size: 0.82rem;
+  color: var(--white-ghost);
+  line-height: 1.7;
+}
+
+/* ════════════════════════════════════════════
+   NEW — PROJECT CATEGORY LABELS
+════════════════════════════════════════════ */
+.project-category {
+  margin-bottom: 1.5rem;
+}
+
+.category-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.6;
+  display: inline-block;
+  padding: 0.3rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  background: var(--space-card);
+}
+
+.work-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--white-ghost);
+  opacity: 0.6;
+  letter-spacing: 0.04em;
+}
+
+.work-links {
+  margin-top: 0.4rem;
+}
+
+.work-link {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-bright);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.25s, border-color 0.25s;
+  border-bottom: 1px solid rgba(120,192,255,0.2);
+  padding-bottom: 2px;
+}
+
+.work-link:hover {
+  color: var(--ice);
+  border-color: var(--accent-bright);
+}
+
+/* ════════════════════════════════════════════
+   NEW — CLINICAL & CREATIVE NARRATIVES
+════════════════════════════════════════════ */
+.clinical-narrative,
+.creative-narrative {
+  background: var(--space-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.clinical-narrative p,
+.creative-narrative p {
+  font-size: 0.95rem;
+  color: var(--white-ghost);
+  line-height: 1.8;
+  max-width: 780px;
+}
+
+.clinical-link,
+.creative-link {
+  margin-top: 1.5rem;
+}
+
+/* ════════════════════════════════════════════
+   NEW — CREATIVE GRID (3D & Video)
+════════════════════════════════════════════ */
+.creative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.creative-item {
+  background: var(--space-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.creative-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-bright);
+}
+
+.creative-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.creative-label {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: var(--white-ghost);
+  text-align: center;
+}
+
+/* ════════════════════════════════════════════
+   NEW — SKILLS & CERTIFICATIONS (ORBIT)
+════════════════════════════════════════════ */
+.skills-cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.skills-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.skills-group-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills-group-pills span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.9rem;
+  background: var(--visor);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--ice-dim);
+  letter-spacing: 0.02em;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.skills-group-pills span:hover {
+  background: var(--accent-dim);
+  border-color: var(--border-bright);
+  color: var(--accent-bright);
+}
+
+.certs-group-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--white-pure);
+  margin-bottom: 2rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.25s, color 0.25s;
+}
+
+.cert-item:hover {
+  padding-left: 6px;
+  color: var(--accent-bright);
+}
+
+.cert-icon {
+  font-size: 0.9rem;
+  color: var(--accent);
+  opacity: 0.5;
+  width: 28px;
+  text-align: center;
+}
+
+.cert-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-name {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--white-dim);
+}
+
+.cert-org {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--white-ghost);
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+
+.cert-arrow {
+  font-size: 0.9rem;
+  color: var(--accent-bright);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.cert-item:hover .cert-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ════════════════════════════════════════════
+   RESPONSIVE — new additions
+════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .three-worlds {
+    grid-template-columns: 1fr;
+  }
+  .skills-cert-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .creative-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .creative-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ════════════════════════════════════════════
    CONTACT
 ════════════════════════════════════════════ */
 .contact-grid {

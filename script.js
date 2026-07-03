@@ -24,7 +24,6 @@
         a: Math.random() * 0.7 + 0.3,
         speed: Math.random() * 0.35 + 0.08,
         phase: Math.random() * Math.PI * 2,
-        /* mostly white/ice, occasional blue accent */
         col: roll > 0.9
           ? `rgba(120,192,255,`
           : roll > 0.75
@@ -36,7 +35,6 @@
 
   function initNebulas() {
     nebulas = [
-      /* subtle blue-tinted clouds */
       { x: W*0.12, y: H*0.22, rx: W*0.30, ry: H*0.25, col:'rgba(10,25,55,0.6)'    },
       { x: W*0.78, y: H*0.18, rx: W*0.25, ry: H*0.20, col:'rgba(8,18,45,0.5)'     },
       { x: W*0.50, y: H*0.72, rx: W*0.38, ry: H*0.22, col:'rgba(5,15,40,0.45)'    },
@@ -104,7 +102,6 @@
   function draw() {
     t += 0.01;
 
-    /* background — pure near-black, blue tint at top */
     const bg = ctx.createLinearGradient(0, 0, 0, H);
     bg.addColorStop(0,    '#02060f');
     bg.addColorStop(0.35, '#020408');
@@ -114,7 +111,6 @@
 
     drawNebulas();
 
-    /* horizon/bottom fade to near-black (so image blends) */
     const hg = ctx.createLinearGradient(0, H * 0.5, 0, H);
     hg.addColorStop(0,   'transparent');
     hg.addColorStop(0.7, 'rgba(2,4,10,0.5)');
@@ -122,7 +118,6 @@
     ctx.fillStyle = hg;
     ctx.fillRect(0, 0, W, H);
 
-    /* stars */
     stars.forEach(s => {
       const alpha = s.a * (0.4 + 0.6 * Math.sin(t * s.speed + s.phase));
       ctx.beginPath();
@@ -197,10 +192,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 
 /* ══════════════════════════════════════════
-   SIDE DOTS — scroll tracking
+   SIDE DOTS — scroll tracking (updated for 5 sections)
 ══════════════════════════════════════════ */
 const sideDots = document.querySelectorAll('.side-dot');
-const sections = ['home', 'about', 'projects', 'contact'];
+const sections = ['home', 'about', 'projects', 'skills', 'contact'];
 
 function updateDots() {
   let current = 'home';
