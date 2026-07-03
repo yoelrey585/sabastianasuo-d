@@ -465,7 +465,6 @@ ul  { list-style: none; }
 .work-list {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
 }
@@ -475,13 +474,17 @@ ul  { list-style: none; }
   grid-template-columns: 52px 320px 1fr;
   align-items: stretch;
   background: var(--space-card);
-  border-bottom: 1px solid var(--border);
   transition: background 0.35s;
   cursor: pointer;
 }
 
-.work-item:last-child { border-bottom: none; }
-.work-item:hover { background: var(--space-raised); }
+.work-item:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.work-item:hover {
+  background: var(--space-raised);
+}
 
 .work-num {
   font-family: var(--font-mono);
