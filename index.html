@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>the rogue astronaut — Sabastian Asuo-Darko</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sabastian Asuo-Darko — Biomedical Engineer & Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
 <nav id="nav">
   <div class="nav-inner">
     <a href="#home" class="nav-brand">
       <span class="brand-dot"></span>
-      <span class="brand-text">ra.</span>
+      <span>ASH</span>
     </a>
     <ul class="nav-links">
       <li><a href="#home" data-num="00">home</a></li>
-      <li><a href="#about" data-num="01">signal origin</a></li>
-      <li><a href="#projects" data-num="02">transmissions</a></li>
-      <li><a href="#skills" data-num="03">orbit</a></li>
-      <li><a href="#contact" data-num="04">open channel</a></li>
+      <li><a href="#about" data-num="01">about</a></li>
+      <li><a href="#research" data-num="02">research</a></li>
+      <li><a href="#clinical" data-num="03">clinical</a></li>
+      <li><a href="#creative" data-num="04">creative</a></li>
+      <li><a href="#skills" data-num="05">skills</a></li>
+      <li><a href="#contact" data-num="06">contact</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="menu">
       <span></span><span></span>
@@ -36,26 +40,28 @@
 <div class="mobile-menu" id="mobileMenu">
   <ul>
     <li><a href="#home" class="mm-link">home</a></li>
-    <li><a href="#about" class="mm-link">signal origin</a></li>
-    <li><a href="#projects" class="mm-link">transmissions</a></li>
-    <li><a href="#skills" class="mm-link">orbit</a></li>
-    <li><a href="#contact" class="mm-link">open channel</a></li>
+    <li><a href="#about" class="mm-link">about</a></li>
+    <li><a href="#research" class="mm-link">research</a></li>
+    <li><a href="#clinical" class="mm-link">clinical</a></li>
+    <li><a href="#creative" class="mm-link">creative</a></li>
+    <li><a href="#skills" class="mm-link">skills</a></li>
+    <li><a href="#contact" class="mm-link">contact</a></li>
   </ul>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- ════════════════════════════════════════════
      HERO
-═══════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <section id="home" class="hero-section">
   <canvas id="spaceCanvas"></canvas>
 
   <div class="hero-planet-wrap">
     <img
       src="images/greenspace.png"
-      alt="Astronaut in space"
+      alt="Sabastian Asuo-Darko"
       class="hero-planet-img"
       onerror="this.src='https://placehold.co/520x680/050a12/6ab4ff?text=🚀'"
-    >
+    />
     <div class="hero-planet-glow"></div>
   </div>
 
@@ -64,23 +70,25 @@
       <span class="hero-label-line"></span>
       sabastian asuo-darko
       <span class="hero-label-line"></span>
-      biomedical engineer · researcher · creator
+      biomedical engineer · researcher · clinical engineer
     </div>
-    <h1 class="hero-title">
-      the rogue<br><em>astronaut</em>
-    </h1>
+    <h1 class="hero-name">Sabastian<br /><em>Asuo-Darko</em></h1>
+    <div class="hero-sub">Biomedical Engineering · Research · Clinical Engineering</div>
+
     <div class="hero-actions">
-      <a href="docs/biomedcv.pdf" target="_blank" class="hero-cv-btn">
+      <a href="docs/gradcv.pdf" target="_blank" class="hero-btn hero-btn-primary">
         <i class="fas fa-file-pdf"></i> view CV
       </a>
-      <span class="hero-scroll-hint">scroll to explore ↓</span>
+      <span class="hero-scroll-hint">↓ explore</span>
     </div>
   </div>
 
   <div class="side-nav">
     <a href="#home"     class="side-dot active" data-section="home"></a>
     <a href="#about"    class="side-dot" data-section="about"></a>
-    <a href="#projects" class="side-dot" data-section="projects"></a>
+    <a href="#research" class="side-dot" data-section="research"></a>
+    <a href="#clinical" class="side-dot" data-section="clinical"></a>
+    <a href="#creative" class="side-dot" data-section="creative"></a>
     <a href="#skills"   class="side-dot" data-section="skills"></a>
     <a href="#contact"  class="side-dot" data-section="contact"></a>
   </div>
@@ -97,71 +105,83 @@
     <span class="strip-sep">·</span>
     <span>Clinical Engineer</span>
     <span class="strip-sep">·</span>
-    <span>3D Artist</span>
+    <span>Design</span>
     <span class="strip-sep">·</span>
-    <span>Visual Storyteller</span>
+    <span>First-Class Honours</span>
     <span class="strip-sep">·</span>
     <span>Ghana</span>
     <span class="strip-sep">·</span>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-     SIGNAL ORIGIN — ABOUT
-═══════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
 <section id="about" class="section section--dark">
   <div class="container">
 
     <header class="section-head fade-in">
-      <span class="section-eyebrow">01 — signal origin</span>
-      <h2 class="section-title">the rogue <em>astronaut</em></h2>
+      <span class="section-eyebrow">01 — about</span>
+      <h2 class="section-title">about <em>sabastian</em></h2>
+      <p class="section-sub">Biomedical engineer, researcher, and clinical engineer operating at the intersection of medicine, technology, and design.</p>
     </header>
 
     <div class="about-grid">
 
       <div class="about-col-left fade-in">
-        <p class="about-lede">I'm Sabastian — a First-Class Biomedical Engineering graduate who operates at the intersection of <strong>research, clinical engineering, 3D design, and visual storytelling</strong>. I don't just cross disciplines — I weld them together.</p>
+        <p class="about-lede">
+          I'm a First-Class Honours graduate in Biomedical Engineering from KNUST. My research focuses on <strong>computational biomechanics, respiratory mechanics, and medical device development</strong>. I've co-authored a peer-reviewed publication on pressure ulcer prevention and led research on ventilator-induced lung injury using ANSYS.
+        </p>
 
-        <div class="about-profile-img-wrap">
-          <img src="images/profile2.jpg" alt="Sabastian Asuo-Darko" class="about-profile-img"
-               onerror="this.src='https://placehold.co/400x500/050a12/6ab4ff?text=Sabastian'">
+        <div class="about-profile-wrap">
+          <img src="images/profile2.jpg" alt="Sabastian Asuo-Darko"
+               onerror="this.src='https://placehold.co/400x500/050a12/6ab4ff?text=Sabastian'" />
         </div>
 
-        <!-- THREE WORLDS -->
-        <div class="three-worlds">
-          <div class="world-card">
-            <div class="world-icon">⚕</div>
-            <h4>Biomedical Eng. Research and Clinical Eng.</h4>
-            <p>First-Class Honours graduate with peer-reviewed publication in pressure ulcer prevention. Research focus: computational biomechanics, respiratory mechanics, and medical device simulation. 2+ years clinical engineering experience across Ghana — installed 50+ devices, maintained 95%+ uptime, trained clinical staff.</p>
+        <!-- Rogue Astronaut Note -->
+        <div class="rogue-note fade-in">
+          <p>
+            <strong>⌖ "rogue astronaut"</strong> — I wander where curiosity takes me, across engineering, research, and design. Comfortable with the unknown, always learning the hard way.
+          </p>
+        </div>
+
+        <!-- Three Pillars -->
+        <div class="pillars fade-in">
+          <div class="pillar">
+            <div class="pillar-icon">⚕</div>
+            <h4>Biomedical Engineering &amp; Research</h4>
+            <p>First-Class Honours with peer-reviewed publication. Research focus: computational biomechanics, respiratory mechanics, and medical device simulation. Top 10% of cohort.</p>
           </div>
-          <div class="world-card">
-            <div class="world-icon">🛸</div>
-            <h4>3D Design</h4>
-            <p>Blender and SolidWorks for 3D modelling, sculpting, and rendering. From anime environments to medical device prototypes — I bring ideas into three dimensions.</p>
+          <div class="pillar">
+            <div class="pillar-icon">🛠</div>
+            <h4>Clinical Engineering</h4>
+            <p>50+ devices installed, 95%+ uptime maintained. Experience across Sysmex, Machine Medics, UGMC, and Ministry of Health. Trained 30+ clinical staff.</p>
           </div>
-          <div class="world-card">
-            <div class="world-icon">🎬</div>
-            <h4>Visual Storytelling</h4>
-            <p>Premiere Pro, After Effects, Photoshop, Illustrator. I produce satirical commentary, analytical video essays, and brand identities — because stories are how we connect.</p>
+          <div class="pillar">
+            <div class="pillar-icon">🎨</div>
+            <h4>Design</h4>
+            <p>3D modelling in Blender, video/photo editing with Adobe tools. Video Editor &amp; Videographer for GRAMICs Foundation. See my creative portfolio for more.</p>
           </div>
         </div>
 
         <div class="skills-block fade-in">
           <h4 class="skills-label">core arsenal</h4>
           <div class="skill-pills">
-            <span>SolidWorks</span><span>ANSYS</span><span>Blender</span>
-            <span>Premiere Pro</span><span>After Effects</span><span>Photoshop</span>
-            <span>Illustrator</span><span>MATLAB</span><span>Python</span>
-            <span>CFD/FEA</span><span>Clinical Engineering</span>
+            <span>SolidWorks</span><span>ANSYS</span><span>MATLAB</span>
+            <span>Python</span><span>Blender</span><span>Premiere Pro</span>
+            <span>After Effects</span><span>Photoshop</span><span>Illustrator</span>
+            <span>CFD/FEA</span><span>IEC 60601</span><span>ISO 13485</span>
           </div>
         </div>
       </div>
 
       <div class="about-col-right fade-in">
         <div class="about-card">
-          <div class="about-card-icon">🛸</div>
-          <h3>why "rogue astronaut"?</h3>
-          <p>I don't follow the standard flight path. I drift where curiosity takes me — across design, engineering, and storytelling. Comfortable with the unknown, always learning the hard way.</p>
+          <h3>📄 CV Summary</h3>
+          <p><strong>Education:</strong> BSc Biomedical Engineering — First Class Honours · KNUST</p>
+          <p style="margin-top:0.6rem;"><strong>Research:</strong> Co-authored publication on smart bedsore prevention · Led VILI simulation study using ANSYS · Computational design of sports equipment</p>
+          <p style="margin-top:0.6rem;"><strong>Clinical:</strong> Field Service Engineer at Sysmex, Machine Medics, Skyler Healthcare · Intern at UGMC &amp; Ministry of Health</p>
+          <a href="docs/gradcv.pdf" target="_blank" class="research-link" style="margin-top:0.8rem;">view full CV →</a>
         </div>
 
         <div class="about-card about-card--stats">
@@ -177,23 +197,21 @@
           </div>
           <div class="stat-row">
             <div class="stat">
-              <div class="stat-num">30+</div>
-              <div class="stat-label">photo & video pieces edited</div>
+              <div class="stat-num">3+</div>
+              <div class="stat-label">research publications &amp; projects</div>
             </div>
             <div class="stat">
-              <div class="stat-num">3+</div>
-              <div class="stat-label">peer-reviewed publications & research pieces</div>
+              <div class="stat-num">30+</div>
+              <div class="stat-label">clinical staff trained</div>
             </div>
           </div>
         </div>
 
         <div class="about-card about-card--links">
-          <h4>find me</h4>
+          <h4>connect</h4>
           <a href="https://www.linkedin.com/in/asuo-d" target="_blank" class="ext-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a href="https://github.com/yoelrey585/" target="_blank" class="ext-link"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="ext-link"><i class="fas fa-briefcase"></i> Portfolio Site</a>
-          <a href="https://www.tiktok.com/@therogue_astronaut" target="_blank" class="ext-link"><i class="fab fa-tiktok"></i> TikTok</a>
-          <a href="docs/sabastiancv.pdf" target="_blank" class="ext-link"><i class="fas fa-file"></i> Curriculum Vitae</a>
+          <a href="docs/gradcv.pdf" target="_blank" class="ext-link"><i class="fas fa-file"></i> Curriculum Vitae</a>
         </div>
       </div>
 
@@ -201,114 +219,117 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     TRANSMISSIONS — PROJECTS
-═══════════════════════════════════════ -->
-<section id="projects" class="section">
+<!-- ════════════════════════════════════════════
+     RESEARCH & ENGINEERING
+════════════════════════════════════════════ -->
+<section id="research" class="section section--light">
   <div class="container">
 
     <header class="section-head fade-in">
-      <span class="section-eyebrow">02 — transmissions</span>
-      <h2 class="section-title">selected <em>work</em></h2>
-      <p class="section-sub">Engineering research, clinical practice, 3D art, and visual storytelling.</p>
+      <span class="section-eyebrow">02 — research</span>
+      <h2 class="section-title">biomedical engineering <em>&amp; research</em></h2>
+      <p class="section-sub">Research projects, publications, and medical device development.</p>
     </header>
 
-    <!-- ─── BIOMEDICAL ENGINEERING & RESEARCH ─── -->
-    <div class="project-category">
-      <h3 class="category-label">biomedical engineering & research</h3>
-    </div>
-
-    <div class="work-list">
+    <div class="research-list">
 
       <!-- VILI Study -->
-      <div class="work-item fade-in">
-        <div class="work-num">01</div>
-        <div class="work-img-wrap">
-          <img src="images/project1.png" alt="Lung Simulation" onerror="this.src='https://placehold.co/480x300/050a12/6ab4ff?text=CFD+Study'">
-          <div class="work-img-overlay"></div>
+      <div class="research-item fade-in">
+        <div class="research-img">
+          <img src="images/project1.png" alt="Lung Simulation" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=CFD+Study'" />
         </div>
-        <div class="work-body">
-          <span class="work-category">lead researcher · computational modelling</span>
-          <h3 class="work-title">Simulating Pulmonary Mechanics<br><span class="work-subtitle">Ventilator-Induced Lung Injury Study</span></h3>
-          <p class="work-desc">Led a two-person research project modelling spatial pressure propagation in lung tissue. Designed anatomically-inspired 3D lung models in SolidWorks and ran ANSYS CFD-FEA simulations to identify critical pressure thresholds (20-35 cmH₂O) for lung tissue damage.</p>
-          <div class="work-tags"><span>SolidWorks</span><span>ANSYS</span><span>CFD/FEA</span></div>
-          <div class="work-links">
-            <a href="https://drive.google.com/file/d/1k9kGziXcixMF2-kkAjElJ9CFoOv3oHP0/view" target="_blank" class="work-link">view paper →</a>
-          </div>
+        <div class="research-body">
+          <span class="research-category">lead researcher · computational modelling</span>
+          <h3 class="research-title">Simulating Pulmonary Mechanics <span>Ventilator-Induced Lung Injury Study</span></h3>
+          <p class="research-desc">Led a two-person research project modelling spatial pressure propagation in lung tissue. Designed anatomically-inspired 3D lung models in SolidWorks and ran ANSYS CFD-FEA simulations to identify critical pressure thresholds (20–35 cmH₂O) for lung tissue damage.</p>
+          <div class="research-tags"><span>SolidWorks</span><span>ANSYS</span><span>CFD/FEA</span></div>
+          <a href="https://drive.google.com/file/d/1k9kGziXcixMF2-kkAjElJ9CFoOv3oHP0/view" target="_blank" class="research-link">view paper →</a>
         </div>
       </div>
 
       <!-- Bedsores Publication -->
-      <div class="work-item fade-in">
-        <div class="work-num">02</div>
-        <div class="work-img-wrap">
-          <img src="images/publication.png" alt="Bedsores Publication" onerror="this.src='https://www.researchgate.net/publication/377354916_A_Comprehensive_Study_of_Causal_Factors_and_Their_Effects_on_the_Human_Body_for_the_Design_of_a_Smart_Bedsore_Prevention_System'">
-          <div class="work-img-overlay"></div>
+      <div class="research-item fade-in">
+        <div class="research-img">
+          <img src="images/publication.png" alt="Bedsores Publication" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=Publication'" />
         </div>
-        <div class="work-body">
-          <span class="work-category">co-author · publication</span>
-          <h3 class="work-title">Causal Factors in Bedsores<br><span class="work-subtitle">Smart Prevention System Design</span></h3>
-          <p class="work-desc">Co-authored a multidisciplinary study analysing pressure, temperature, and humidity as key contributors to pressure ulcer formation. Supported system design, data analysis, and modelling to inform a smart bedsore prevention device. Addresses a clinical challenge affecting 2.5M+ patients annually.</p>
-          <div class="work-tags"><span>Research</span><span>Data Analysis</span><span>Medical Device Design</span></div>
-          <div class="work-links">
-            <a href="#" target="_blank" class="work-link">view publication →</a>
-          </div>
+        <div class="research-body">
+          <span class="research-category">co-author · peer-reviewed publication</span>
+          <h3 class="research-title">Causal Factors in Bedsores <span>Smart Prevention System Design</span></h3>
+          <p class="research-desc">Co-authored a multidisciplinary study analysing pressure, temperature, and humidity as key contributors to pressure ulcer formation. Supported system design, data analysis, and modelling to inform a smart bedsore prevention device. Addresses a clinical challenge affecting 2.5M+ patients annually.</p>
+          <div class="research-tags"><span>Research</span><span>Data Analysis</span><span>Medical Device Design</span></div>
+          <a href="#" target="_blank" class="research-link">view publication →</a>
         </div>
       </div>
 
       <!-- Sports Equipment Simulation -->
-      <div class="work-item fade-in">
-        <div class="work-num">03</div>
-        <div class="work-img-wrap">
-          <img src="images/simulationhelmet.png" alt="Sports Equipment" onerror="this.src='https://drive.google.com/file/d/1qzrqJeXDefD2jmqjhcl0ZKFot2DE9gCv/view'">
-          <div class="work-img-overlay"></div>
+      <div class="research-item fade-in">
+        <div class="research-img">
+          <img src="images/simulationhelmet.png" alt="Sports Equipment" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=Sports+Simulation'" />
         </div>
-        <div class="work-body">
-          <span class="work-category">lead researcher · computational design</span>
-          <h3 class="work-title">Computational Design of Sports Equipment<br><span class="work-subtitle">Simulation-Driven Engineering</span></h3>
-          <p class="work-desc">Applied computational modelling techniques to analyse stress distribution and performance characteristics of protective sports equipment. Used simulation-driven insights to guide iterative design improvements for helmets, knee braces, and support sleeves.</p>
-          <div class="work-tags"><span>SolidWorks</span><span>ANSYS FEA</span><span>Biomechanics</span></div>
-          <div class="work-links">
-            <a href="#" target="_blank" class="work-link">view documentation →</a>
-          </div>
+        <div class="research-body">
+          <span class="research-category">lead researcher · computational design</span>
+          <h3 class="research-title">Computational Design of Sports Equipment <span>Simulation-Driven Engineering</span></h3>
+          <p class="research-desc">Applied computational modelling techniques to analyse stress distribution and performance characteristics of protective sports equipment. Used simulation-driven insights to guide iterative design improvements for helmets, knee braces, and support sleeves.</p>
+          <div class="research-tags"><span>SolidWorks</span><span>ANSYS FEA</span><span>Biomechanics</span></div>
+          <a href="#" target="_blank" class="research-link">view documentation →</a>
         </div>
       </div>
 
-  <!-- IPC Device -->
-<div class="work-item fade-in">
-  <div class="work-num">04</div>
-  <div class="work-img-wrap">
-    <img src="images/ipc.png" alt="IPC Device" onerror="this.src='https://placehold.co/480x300/050a12/6ab4ff?text=IPC+Device'">
-    <div class="work-img-overlay"></div>
-  </div>
-  <div class="work-body">
-    <span class="work-category">assistant researcher · prototyping</span>
-    <h3 class="work-title">Intermittent Pneumatic Compression Device<br><span class="work-subtitle">Low-Cost DVT Prevention</span></h3>
-    <p class="work-desc">Designed and prototyped a low-cost intermittent pneumatic compression device for DVT prevention. Full cycle — clinical needs assessment, hardware design, Arduino-controlled pneumatics, SolidWorks enclosure CAD, cost analysis. Low-resource Ghana settings were the actual design constraint.</p>
-    <div class="work-tags"><span>SolidWorks</span><span>Arduino</span><span>Prototyping</span></div>
-  </div>
-</div>
+      <!-- IPC Device -->
+      <div class="research-item fade-in">
+        <div class="research-img">
+          <img src="images/ipc.png" alt="IPC Device" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=IPC+Device'" />
+        </div>
+        <div class="research-body">
+          <span class="research-category">assistant researcher · prototyping</span>
+          <h3 class="research-title">Intermittent Pneumatic Compression Device <span>Low-Cost DVT Prevention</span></h3>
+          <p class="research-desc">Designed and prototyped a low-cost intermittent pneumatic compression device for DVT prevention. Full cycle — clinical needs assessment, hardware design, Arduino-controlled pneumatics, SolidWorks enclosure CAD, cost analysis. Low-resource Ghana settings were the design constraint.</p>
+          <div class="research-tags"><span>SolidWorks</span><span>Arduino</span><span>Prototyping</span></div>
+        </div>
+      </div>
 
-    <!-- ─── CLINICAL ENGINEERING ─── -->
-    <div class="project-category" style="margin-top: 4rem;">
-      <h3 class="category-label">clinical engineering</h3>
     </div>
 
-  <div class="clinical-narrative fade-in">
-  <p>I'm a Biomedical Engineering graduate from KNUST with experience spanning Ghana's healthcare system. I began as an intern at UGMC and the Ministry of Health, performing maintenance on devices monthly, repairing critical equipment, and supporting surgeries with Olympus LASER and ERBE ESU systems. I later joined Sysmex West & Central Africa as a Field Service Engineer for haematology and urinalysis analysers, then expanded into immunoassay, ECG, and chemistry systems at Machine Medics. I currently work as a freelance field service engineer, supporting healthcare facilities across the country.</p>
-</div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     CLINICAL ENGINEERING
+════════════════════════════════════════════ -->
+<section id="clinical" class="section section--dark">
+  <div class="container">
+
+    <header class="section-head fade-in">
+      <span class="section-eyebrow">03 — clinical</span>
+      <h2 class="section-title">clinical <em>engineering</em></h2>
+      <p class="section-sub">Field service, device installation, and healthcare technology management across Ghana.</p>
+    </header>
+
+    <div class="clinical-narrative fade-in">
+      <p><strong>Skyler Healthcare</strong> — Field Service &amp; Sales Engineer (Freelance) · May 2026 – Present</p>
+      <p>Installed and commissioned haematology analysers. Performed preventive and corrective maintenance, maintaining 100% device uptime. Delivered hands-on clinical training and led technical presentations during tenders.</p>
+
+      <p style="margin-top:1rem;"><strong>Machine Medics</strong> — Field Service &amp; Sales Engineer (Contract) · Jan 2026 – May 2026</p>
+      <p>Installed and commissioned 15+ immunoassay analysers, ECG machines, and chemistry analysers. Managed end-to-end technical service operations and key accounts. Resolved open field cases and maintained operational continuity.</p>
+
+      <p style="margin-top:1rem;"><strong>Sysmex West &amp; Central Africa</strong> — Field Service Engineer (Asst.) · Oct 2024 – Jan 2026</p>
+      <p>Conducted site readiness assessments for 20+ haematology and urinalysis analysers, reducing setup delays by 30%. Installed and commissioned diagnostic systems. Carried out monthly preventive maintenance, sustaining 95%+ device uptime. Trained clinical and laboratory staff.</p>
+
+      <p style="margin-top:1rem;"><strong>UGMC &amp; Ministry of Health</strong> — Biomedical Engineering Intern</p>
+      <p>Performed routine maintenance on 20+ medical devices monthly, reducing failure rates by 25%. Repaired 10+ critical devices. Tested and validated 30+ medical devices across 10 hospitals, ensuring 100% compliance.</p>
+    </div>
 
     <div class="clinical-gallery fade-in">
       <div class="gallery-grid">
-        <div class="gal-item"><img src="images/1.jpg" alt="Clinical work 1" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/2.jpg" alt="Clinical work 2" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/3.jpg" alt="Clinical work 3" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/4.jpg" alt="Clinical work 4" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/5.jpg" alt="Clinical work 5" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/6.jpg" alt="Clinical work 6" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/7.jpg" alt="Clinical work 7" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/8.jpg" alt="Clinical work 8" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
-        <div class="gal-item"><img src="images/9.jpg" alt="Clinical work 9" loading="lazy" onerror="this.parentElement.style.background='#0a1020'"></div>
+        <div class="gal-item"><img src="images/1.jpg" alt="Clinical work 1" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/2.jpg" alt="Clinical work 2" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/3.jpg" alt="Clinical work 3" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/4.jpg" alt="Clinical work 4" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/5.jpg" alt="Clinical work 5" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/6.jpg" alt="Clinical work 6" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/7.jpg" alt="Clinical work 7" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/8.jpg" alt="Clinical work 8" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
+        <div class="gal-item"><img src="images/9.jpg" alt="Clinical work 9" loading="lazy" onerror="this.parentElement.style.background='#0a1020'" /></div>
       </div>
     </div>
 
@@ -316,107 +337,76 @@
       <a href="https://docs.google.com/presentation/d/1yxydEyaYqWn_XMwki-bokTXM5hSO5ZdQ/edit" target="_blank" class="text-link">full clinical engineering portfolio →</a>
     </div>
 
-    <!-- ─── 3D DESIGN ─── -->
-    <div class="project-category" style="margin-top: 4rem;">
-      <h3 class="category-label">3D design</h3>
-    </div>
+  </div>
+</section>
 
-    <div class="creative-narrative fade-in">
-      <p>I use Blender and SolidWorks to bring ideas into three dimensions — from anime-inspired environments to medical device prototypes. Below are a few samples; the full collection lives on my portfolio site.</p>
-    </div>
+<!-- ════════════════════════════════════════════
+     CREATIVE — ONE CLEAN SECTION
+════════════════════════════════════════════ -->
+<section id="creative" class="section section--light">
+  <div class="container">
 
-    <div class="creative-grid fade-in">
-      <div class="creative-item">
-        <img src="images/infinity2.png" alt="3D work 1" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=3D+Art'">
-        <span class="creative-label">Infinity Castle (Demon Slayer)</span>
-      </div>
-      <div class="creative-item">
-        <img src="images/cse1.png" alt="3D work 2" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=3D+Art'">
-        <span class="creative-label">Stylized Mushroom</span>
-      </div>
-      <div class="creative-item">
-        <img src="images/house2.png" alt="3D work 3" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=3D+Art'">
-        <span class="creative-label">House Environment</span>
-      </div>
-      <div class="creative-item">
-        <img src="images/toy.png" alt="3D work 4" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=3D+Art'">
-        <span class="creative-label">Cute Monster Sculpt</span>
-      </div>
-    </div>
+    <header class="section-head fade-in">
+      <span class="section-eyebrow">04 — creative</span>
+      <h2 class="section-title">design <em>&amp; creative work</em></h2>
+      <p class="section-sub">3D modelling, video editing, and visual storytelling.</p>
+    </header>
 
-    <div class="creative-link fade-in">
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="text-link">view full 3D portfolio →</a>
-    </div>
+    <div class="creative-content fade-in">
+      <div class="creative-text">
+        <p>Beyond engineering, I work with creative tools to bring ideas to life. I do <strong>3D modelling in Blender</strong>, and <strong>video and photo editing with Adobe tools</strong> (Premiere Pro, After Effects, Photoshop, Illustrator).</p>
 
-    <!-- ─── VISUAL STORYTELLING ─── -->
-    <div class="project-category" style="margin-top: 4rem;">
-      <h3 class="category-label">visual storytelling</h3>
-    </div>
+        <p style="margin-top:1.2rem;">I currently work as <strong>Video Editor &amp; Videographer for GRAMICs Foundation</strong>, creating content for community outreach, advocacy campaigns, and mentorship programs. I also work with <strong>CLIPR</strong> on various creative projects.</p>
 
-    <div class="creative-narrative fade-in">
-      <p>I produce satirical commentary, analytical video essays, and brand identities. Premiere Pro, After Effects, Photoshop, Illustrator — these are my instruments for telling stories that connect.</p>
-    </div>
+        <p style="margin-top:1.2rem;">All my creative work — 3D art, video edits, photo manipulations — lives on my dedicated portfolio site.</p>
 
-    <div class="creative-grid fade-in">
-      <div class="creative-item">
-        <img src="images/wyalfl1.png" alt="Video work 1" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=Video'">
-        <span class="creative-label">"Why You Always Feel Like You Are Losing"</span>
+        <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="creative-portfolio-btn">
+          <i class="fas fa-palette"></i> view creative portfolio
+        </a>
       </div>
-      <div class="creative-item">
-        <img src="images/mesliced.png" alt="Video work 2" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=Video'">
-        <span class="creative-label">Photoshop Photo Manipulation</span>
-      </div>
-      <div class="creative-item">
-        <img src="images/BF1.png" alt="Video work 3" onerror="this.src='https://placehold.co/400x300/0a1020/6ab4ff?text=Video'">
-        <span class="creative-label">Winnie's Juice Bar — Brand & Promotion</span>
-      </div>
-    </div>
-
-    <div class="creative-link fade-in">
-      <a href="https://yoelrey585.github.io/portfoliosite/" target="_blank" class="text-link">view full video and photo portfolio →</a>
     </div>
 
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     ORBIT — SKILLS & CERTIFICATIONS
-═══════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════ -->
 <section id="skills" class="section section--dark">
   <div class="container">
 
     <header class="section-head fade-in">
-      <span class="section-eyebrow">03 — orbit</span>
-      <h2 class="section-title">skills & <em>certifications</em></h2>
+      <span class="section-eyebrow">05 — skills</span>
+      <h2 class="section-title">skills &amp; <em>certifications</em></h2>
       <p class="section-sub">The tools, knowledge, and credentials I carry into every mission.</p>
     </header>
 
     <div class="skills-cert-grid">
 
-      <!-- Skills Group -->
+      <!-- Skills -->
       <div class="skills-group fade-in">
-        <h3 class="skills-group-title">engineering & simulation</h3>
+        <h3 class="skills-group-title">engineering &amp; simulation</h3>
         <div class="skills-group-pills">
           <span>ANSYS</span><span>MATLAB</span><span>SolidWorks</span><span>AutoCAD</span><span>LabVIEW</span>
         </div>
 
-        <h3 class="skills-group-title" style="margin-top: 2rem;">programming & data</h3>
-        <div class="skills-group-pills">
-          <span>Python</span><span>C</span><span>C++</span><span>SQL</span><span>AI & ML</span><span>Git</span>
-        </div>
-
-        <h3 class="skills-group-title" style="margin-top: 2rem;">design & creative</h3>
-        <div class="skills-group-pills">
-          <span>Blender</span><span>Premiere Pro</span><span>After Effects</span><span>Photoshop</span><span>Illustrator</span>
-        </div>
-
-        <h3 class="skills-group-title" style="margin-top: 2rem;">clinical & regulatory</h3>
+        <h3 class="skills-group-title">clinical &amp; regulatory</h3>
         <div class="skills-group-pills">
           <span>IEC 60601</span><span>ISO 13485</span><span>Device Installation</span><span>Preventive Maintenance</span><span>Clinical Training</span>
         </div>
+
+        <h3 class="skills-group-title">programming &amp; data</h3>
+        <div class="skills-group-pills">
+          <span>Python</span><span>C</span><span>C++</span><span>SQL</span><span>AI &amp; ML</span><span>Git</span>
+        </div>
+
+        <h3 class="skills-group-title">design</h3>
+        <div class="skills-group-pills">
+          <span>Blender</span><span>Premiere Pro</span><span>After Effects</span><span>Photoshop</span><span>Illustrator</span>
+        </div>
       </div>
 
-      <!-- Certifications Group -->
+      <!-- Certifications -->
       <div class="certs-group fade-in">
         <h3 class="certs-group-title">certifications</h3>
 
@@ -450,7 +440,7 @@
         <a href="https://drive.google.com/drive/folders/1bojy7NKxAYtuyHh1SyR6l43HpZzPm9W0?usp=sharing" target="_blank" class="cert-item">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
-            <span class="cert-name">Professional Development: IT Security & AI</span>
+            <span class="cert-name">Professional Development: IT Security &amp; AI</span>
             <span class="cert-org">ALX</span>
           </div>
           <span class="cert-arrow">↗</span>
@@ -471,22 +461,22 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     OPEN CHANNEL — CONTACT
-═══════════════════════════════════════ -->
-<section id="contact" class="section">
+<!-- ════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" class="section section--light">
   <div class="container">
 
     <header class="section-head fade-in">
-      <span class="section-eyebrow">04 — open channel</span>
+      <span class="section-eyebrow">06 — contact</span>
       <h2 class="section-title">let's <em>connect</em></h2>
-      <p class="section-sub">Ready to go off-grid together?</p>
+      <p class="section-sub">Ready to collaborate, research, or explore the frontiers of medical technology together?</p>
     </header>
 
     <div class="contact-grid">
 
       <div class="contact-main fade-in">
-        <p class="contact-lede">I respond within 24 hours. Whether you're here to collaborate, commission, or just curious — send a signal.</p>
+        <p class="contact-lede">I respond within 24 hours. Whether you're here to collaborate, research, or just curious — send a signal.</p>
 
         <div class="contact-emails">
           <a href="mailto:sabastiandarko@outlook.com" class="contact-email-row">
@@ -504,7 +494,6 @@
         <div class="contact-socials">
           <a href="https://www.linkedin.com/in/asuo-d" class="csoc" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/yoelrey585/" class="csoc" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://yoelrey585.github.io/portfoliosite/" class="csoc" target="_blank"><i class="fas fa-briefcase"></i></a>
           <a href="https://www.tiktok.com/@therogue_astronaut" class="csoc" target="_blank"><i class="fab fa-tiktok"></i></a>
           <a href="https://www.youtube.com/@RogueAstronaut-u5x" class="csoc" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
@@ -526,11 +515,13 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
 <footer>
   <div class="footer-inner">
-    <p class="footer-copy">© 2025 rogue astronaut — Sabastian Asuo-Darko</p>
-    <p class="footer-quote"><em>breaking orbit. bending rules. building the future.</em></p>
+    <p class="footer-copy">© 2026 Sabastian Asuo-Darko</p>
+    <p class="footer-quote"><em>"rogue astronaut" — breaking orbit. bending rules. building the future.</em></p>
     <a href="#home" class="footer-top">back to orbit ↑</a>
   </div>
 </footer>
