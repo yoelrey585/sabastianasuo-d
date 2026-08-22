@@ -1,6 +1,4 @@
-/* ══════════════════════════════════════════
-   SPACE CANVAS — deep black + blue visor palette
-══════════════════════════════════════════ */
+/* ── SPACE CANVAS ── */
 (function () {
   const canvas = document.getElementById('spaceCanvas');
   if (!canvas) return;
@@ -144,19 +142,13 @@
   init();
 })();
 
-
-/* ══════════════════════════════════════════
-   NAV scroll state
-══════════════════════════════════════════ */
+/* ── NAV SCROLL STATE ── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-
-/* ══════════════════════════════════════════
-   MOBILE MENU
-══════════════════════════════════════════ */
+/* ── MOBILE MENU ── */
 const menuBtn    = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -174,10 +166,7 @@ document.querySelectorAll('.mm-link').forEach(link => {
   });
 });
 
-
-/* ══════════════════════════════════════════
-   SMOOTH SCROLL
-══════════════════════════════════════════ */
+/* ── SMOOTH SCROLL ── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href');
@@ -190,69 +179,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-
-/* ══════════════════════════════════════════
-   SIDE DOTS — scroll tracking (6 sections)
-══════════════════════════════════════════ */
-const sideDots = document.querySelectorAll('.side-dot');
-const sections = ['home', 'about', 'research', 'clinical', 'skills', 'contact'];
-
-function updateDots() {
-  let current = 'home';
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && window.scrollY >= el.offsetTop - window.innerHeight / 2) current = id;
-  });
-  sideDots.forEach(d => d.classList.toggle('active', d.dataset.section === current));
-}
-
-window.addEventListener('scroll', updateDots, { passive: true });
-updateDots();
-
-
-/* ══════════════════════════════════════════
-   FADE IN
-══════════════════════════════════════════ */
-const io = new IntersectionObserver(entries => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 85);
-      io.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
-
-/* ══════════════════════════════════════════
-   TICKER — seamless loop
-══════════════════════════════════════════ */
-const strip = document.querySelector('.intro-strip-inner');
-if (strip) strip.innerHTML += strip.innerHTML;
-
-
-/* ══════════════════════════════════════════
-   CARD TILT — desktop only
-══════════════════════════════════════════ */
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  document.querySelectorAll('.research-item').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const r = card.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width  - 0.5;
-      const y = (e.clientY - r.top)  / r.height - 0.5;
-      card.style.transition = 'transform 0.08s ease, border-color 0.3s';
-      card.style.transform  = `perspective(900px) rotateX(${-y * 1.5}deg) rotateY(${x * 1.5}deg)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transition = 'transform 0.55s ease, border-color 0.3s';
-      card.style.transform  = '';
-    });
-  });
-
-  /* ══════════════════════════════════════════
-   SIDE DOTS — scroll tracking (7 sections)
-══════════════════════════════════════════ */
+/* ── SIDE DOTS — scroll tracking, all 7 sections ── */
 const sideDots = document.querySelectorAll('.side-dot');
 const sections = ['home', 'about', 'research', 'clinical', 'creative', 'skills', 'contact'];
 
@@ -268,4 +195,35 @@ function updateDots() {
 window.addEventListener('scroll', updateDots, { passive: true });
 updateDots();
 
+/* ── FADE IN ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 85);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+/* ── TICKER — seamless loop ── */
+const strip = document.querySelector('.intro-strip-inner');
+if (strip) strip.innerHTML += strip.innerHTML;
+
+/* ── CARD TILT — desktop only ── */
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  document.querySelectorAll('.research-item').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - 0.5;
+      const y = (e.clientY - r.top)  / r.height - 0.5;
+      card.style.transition = 'transform 0.08s ease, border-color 0.3s';
+      card.style.transform  = `perspective(900px) rotateX(${-y * 1.5}deg) rotateY(${x * 1.5}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transition = 'transform 0.55s ease, border-color 0.3s';
+      card.style.transform  = '';
+    });
+  });
 }
