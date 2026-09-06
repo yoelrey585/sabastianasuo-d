@@ -6,7 +6,7 @@
 <title>Sabastian Asuo-Darko — Biomedical Engineer & Researcher</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -49,11 +49,19 @@
   <canvas id="spaceCanvas"></canvas>
 
   <div class="hero-planet-wrap">
+    <div class="hero-hud-frame">
+      <span class="hud-corner tl">[</span>
+      <span class="hud-corner tr">]</span>
+      <span class="hud-corner bl">[</span>
+      <span class="hud-corner br">]</span>
+      <div class="hud-label-top">A MESSAGE FROM EARTH</div>
+      <div class="hud-label-bottom">LOCATION: 5.6037° N, 0.1870° W</div>
+    </div>
     <img
       src="images/greenspace.png"
       alt="Sabastian Asuo-Darko"
       class="hero-planet-img"
-      onerror="this.src='https://placehold.co/520x680/050a12/6ab4ff?text=🚀'"
+      onerror="this.src='https://placehold.co/1200x600/050a12/00F2FF?text=Landscape'"
     />
     <div class="hero-planet-glow"></div>
   </div>
@@ -63,7 +71,6 @@
       <span class="hero-label-line"></span>
       sabastian asuo-darko
       <span class="hero-label-line"></span>
-      biomedical engineer · researcher · clinical engineer
     </div>
     <h1 class="hero-name">Sabastian<br /><em>Asuo-Darko</em></h1>
     <div class="hero-sub">Biomedical Engineering · Research · Clinical Engineering</div>
@@ -74,6 +81,13 @@
       </a>
       <span class="hero-scroll-hint">↓ explore</span>
     </div>
+  </div>
+
+  <div class="hero-bottom-bar">
+    <span class="bottom-tag">01 BIOMEDICAL ENGINEERING</span>
+    <span class="bottom-tag">02 COMPUTATIONAL SIMULATION</span>
+    <span class="bottom-tag">03 CLINICAL SYSTEMS</span>
+    <span class="bottom-tag">04 CREATIVE DESIGN</span>
   </div>
 
   <div class="side-nav">
@@ -108,15 +122,14 @@
 
 <section id="about" class="section section--dark">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 01-ABOUT</span>
       <span class="section-eyebrow">01 — about</span>
       <h2 class="section-title">about <em>sabastian</em></h2>
       <p class="section-sub">Biomedical engineer, researcher, and clinical engineer operating at the intersection of medicine, technology, and design.</p>
     </header>
 
     <div class="about-grid">
-
       <div class="about-col-left fade-in">
         <p class="about-lede">
           I'm a First-Class Honours graduate in Biomedical Engineering from KNUST. My research focuses on <strong>computational biomechanics, respiratory mechanics, and medical device development</strong>. I've co-authored a peer-reviewed publication on pressure ulcer prevention and led research on ventilator-induced lung injury using ANSYS.
@@ -124,7 +137,7 @@
 
         <div class="about-profile-wrap">
           <img src="images/profile2.jpg" alt="Sabastian Asuo-Darko"
-               onerror="this.src='https://placehold.co/400x500/050a12/6ab4ff?text=Sabastian'" />
+               onerror="this.src='https://placehold.co/400x500/050a12/00F2FF?text=Sabastian'" />
         </div>
 
         <div class="rogue-note fade-in">
@@ -134,17 +147,17 @@
         </div>
 
         <div class="pillars fade-in">
-          <div class="pillar">
+          <div class="pillar glass-panel">
             <div class="pillar-icon">⚕</div>
             <h4>Biomedical Engineering &amp; Research</h4>
             <p>First-Class Honours with peer-reviewed publication. Research focus: computational biomechanics, respiratory mechanics, and medical device simulation. Top 10% of cohort.</p>
           </div>
-          <div class="pillar">
+          <div class="pillar glass-panel">
             <div class="pillar-icon">🛠</div>
             <h4>Clinical Engineering</h4>
             <p>50+ devices installed, 95%+ uptime maintained. Experience across Sysmex, Machine Medics, UGMC, and Ministry of Health. Trained 30+ clinical staff.</p>
           </div>
-          <div class="pillar">
+          <div class="pillar glass-panel">
             <div class="pillar-icon">🎨</div>
             <h4>Design</h4>
             <p>3D modelling in Blender, video/photo editing with Adobe tools. Video Editor &amp; Videographer for GRAMICs Foundation. See my creative portfolio for more.</p>
@@ -163,7 +176,7 @@
       </div>
 
       <div class="about-col-right fade-in">
-        <div class="about-card">
+        <div class="about-card glass-panel">
           <h3>📄 CV Summary</h3>
           <p><strong>Education:</strong> BSc Biomedical Engineering — First Class Honours · KNUST</p>
           <p class="mt-sm"><strong>Research:</strong> Co-authored publication on smart bedsore prevention · Led VILI simulation study using ANSYS · Computational design of sports equipment</p>
@@ -171,7 +184,7 @@
           <a href="docs/biomedcv.pdf" target="_blank" class="research-link mt-md">view full CV →</a>
         </div>
 
-        <div class="about-card about-card--stats">
+        <div class="about-card about-card--stats glass-panel">
           <div class="stat-row">
             <div class="stat">
               <div class="stat-num">50+</div>
@@ -194,32 +207,30 @@
           </div>
         </div>
 
-        <div class="about-card about-card--links">
+        <div class="about-card about-card--links glass-panel">
           <h4>connect</h4>
           <a href="https://www.linkedin.com/in/asuo-d" target="_blank" class="ext-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a href="https://github.com/yoelrey585/" target="_blank" class="ext-link"><i class="fab fa-github"></i> GitHub</a>
           <a href="docs/biomedcv.pdf" target="_blank" class="ext-link"><i class="fas fa-file"></i> Curriculum Vitae</a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <section id="research" class="section section--light">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 02-RESEARCH</span>
       <span class="section-eyebrow">02 — research</span>
       <h2 class="section-title">biomedical engineering <em>&amp; research</em></h2>
       <p class="section-sub">Research projects, publications, and medical device development.</p>
     </header>
 
     <div class="research-list">
-
-      <div class="research-item fade-in">
+      <div class="research-item glass-panel fade-in" data-tilt>
         <div class="research-img">
-          <img src="images/project1.png" alt="Lung Simulation" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=CFD+Study'" />
+          <img src="images/project1.png" alt="Lung Simulation" onerror="this.src='https://placehold.co/480x360/050a12/00F2FF?text=CFD+Study'" />
         </div>
         <div class="research-body">
           <span class="research-category">lead researcher · computational modelling</span>
@@ -230,9 +241,9 @@
         </div>
       </div>
 
-      <div class="research-item fade-in">
+      <div class="research-item glass-panel fade-in" data-tilt>
         <div class="research-img">
-          <img src="images/publication.png" alt="Bedsores Publication" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=Publication'" />
+          <img src="images/publication.png" alt="Bedsores Publication" onerror="this.src='https://placehold.co/480x360/050a12/00F2FF?text=Publication'" />
         </div>
         <div class="research-body">
           <span class="research-category">co-author · peer-reviewed publication</span>
@@ -243,9 +254,9 @@
         </div>
       </div>
 
-      <div class="research-item fade-in">
+      <div class="research-item glass-panel fade-in" data-tilt>
         <div class="research-img">
-          <img src="images/simulationhelmet.png" alt="Sports Equipment" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=Sports+Simulation'" />
+          <img src="images/simulationhelmet.png" alt="Sports Equipment" onerror="this.src='https://placehold.co/480x360/050a12/00F2FF?text=Sports+Simulation'" />
         </div>
         <div class="research-body">
           <span class="research-category">lead researcher · computational design</span>
@@ -256,9 +267,9 @@
         </div>
       </div>
 
-      <div class="research-item fade-in">
+      <div class="research-item glass-panel fade-in" data-tilt>
         <div class="research-img">
-          <img src="images/ipc.png" alt="IPC Device" onerror="this.src='https://placehold.co/480x360/050a12/6ab4ff?text=IPC+Device'" />
+          <img src="images/ipc.png" alt="IPC Device" onerror="this.src='https://placehold.co/480x360/050a12/00F2FF?text=IPC+Device'" />
         </div>
         <div class="research-body">
           <span class="research-category">assistant researcher · prototyping</span>
@@ -267,22 +278,20 @@
           <div class="research-tags"><span>SolidWorks</span><span>Arduino</span><span>Prototyping</span></div>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <section id="clinical" class="section section--dark">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 03-CLINICAL</span>
       <span class="section-eyebrow">03 — clinical</span>
       <h2 class="section-title">clinical <em>engineering</em></h2>
       <p class="section-sub">Field service, device installation, and healthcare technology management across Ghana.</p>
     </header>
 
-    <div class="clinical-narrative fade-in">
+    <div class="clinical-narrative glass-panel fade-in">
       <p><strong>Skyler Healthcare</strong> — Field Service &amp; Sales Engineer (Freelance) · May 2026 – Present</p>
       <p>Installed and commissioned haematology analysers. Performed preventive and corrective maintenance, maintaining 100% device uptime. Delivered hands-on clinical training and led technical presentations during tenders.</p>
 
@@ -313,20 +322,19 @@
     <div class="clinical-link fade-in">
       <a href="https://docs.google.com/presentation/d/1yxydEyaYqWn_XMwki-bokTXM5hSO5ZdQ/edit" target="_blank" class="text-link">full clinical engineering portfolio →</a>
     </div>
-
   </div>
 </section>
 
 <section id="creative" class="section section--light">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 04-CREATIVE</span>
       <span class="section-eyebrow">04 — creative</span>
       <h2 class="section-title">design <em>&amp; creative work</em></h2>
       <p class="section-sub">3D modelling, video editing, and visual storytelling.</p>
     </header>
 
-    <div class="creative-content fade-in">
+    <div class="creative-content fade-in glass-panel">
       <div class="creative-text">
         <p>Beyond engineering, I work with creative tools to bring ideas to life. I do <strong>3D modelling in Blender</strong>, and <strong>video and photo editing with Adobe tools</strong> (Premiere Pro, After Effects, Photoshop, Illustrator).</p>
 
@@ -339,21 +347,19 @@
         </a>
       </div>
     </div>
-
   </div>
 </section>
 
 <section id="skills" class="section section--dark">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 05-SKILLS</span>
       <span class="section-eyebrow">05 — skills</span>
       <h2 class="section-title">skills &amp; <em>certifications</em></h2>
       <p class="section-sub">The tools, knowledge, and credentials I carry into every mission.</p>
     </header>
 
     <div class="skills-cert-grid">
-
       <div class="skills-group fade-in">
         <h3 class="skills-group-title">engineering &amp; simulation</h3>
         <div class="skills-group-pills">
@@ -379,7 +385,7 @@
       <div class="certs-group fade-in">
         <h3 class="certs-group-title">certifications</h3>
 
-        <a href="https://drive.google.com/file/d/1PzFtEvlXACJG6-yb_-ygMtwgcRcYzdNi/view?usp=sharing" target="_blank" class="cert-item">
+        <a href="https://drive.google.com/file/d/1PzFtEvlXACJG6-yb_-ygMtwgcRcYzdNi/view?usp=sharing" target="_blank" class="cert-item glass-panel">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
             <span class="cert-name">Medical Device Essentials</span>
@@ -388,7 +394,7 @@
           <span class="cert-arrow">↗</span>
         </a>
 
-        <a href="https://drive.google.com/file/d/1POUTwrDTudGaO5dc8KQXPmwt5qaWpbrv/view" target="_blank" class="cert-item">
+        <a href="https://drive.google.com/file/d/1POUTwrDTudGaO5dc8KQXPmwt5qaWpbrv/view" target="_blank" class="cert-item glass-panel">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
             <span class="cert-name">WHO Covid-19 Respiratory Equipment</span>
@@ -397,7 +403,7 @@
           <span class="cert-arrow">↗</span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1dPy4jWDczEA11SvUTyVVarvzPuOdWbVW?usp=sharing" target="_blank" class="cert-item">
+        <a href="https://drive.google.com/drive/folders/1dPy4jWDczEA11SvUTyVVarvzPuOdWbVW?usp=sharing" target="_blank" class="cert-item glass-panel">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
             <span class="cert-name">Sysmex Caresphere User Operation Training</span>
@@ -406,7 +412,7 @@
           <span class="cert-arrow">↗</span>
         </a>
 
-        <a href="https://drive.google.com/drive/folders/1bojy7NKxAYtuyHh1SyR6l43HpZzPm9W0?usp=sharing" target="_blank" class="cert-item">
+        <a href="https://drive.google.com/drive/folders/1bojy7NKxAYtuyHh1SyR6l43HpZzPm9W0?usp=sharing" target="_blank" class="cert-item glass-panel">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
             <span class="cert-name">Professional Development: IT Security &amp; AI</span>
@@ -415,7 +421,7 @@
           <span class="cert-arrow">↗</span>
         </a>
 
-        <a href="https://drive.google.com/file/d/1UfCiUWZUsqHWkSNqx3wG0B5LV9DfnDf0/view?usp=drive_link" target="_blank" class="cert-item">
+        <a href="https://drive.google.com/file/d/1UfCiUWZUsqHWkSNqx3wG0B5LV9DfnDf0/view?usp=drive_link" target="_blank" class="cert-item glass-panel">
           <span class="cert-icon"><i class="fas fa-certificate"></i></span>
           <div class="cert-info">
             <span class="cert-name">AI Career Essentials</span>
@@ -423,34 +429,31 @@
           </div>
           <span class="cert-arrow">↗</span>
         </a>
-
       </div>
-
     </div>
   </div>
 </section>
 
 <section id="contact" class="section section--light">
   <div class="container">
-
     <header class="section-head fade-in">
+      <span class="section-ref">// REF: 06-CONTACT</span>
       <span class="section-eyebrow">06 — contact</span>
       <h2 class="section-title">let's <em>connect</em></h2>
       <p class="section-sub">Ready to collaborate, research, or explore the frontiers of medical technology together?</p>
     </header>
 
     <div class="contact-grid">
-
       <div class="contact-main fade-in">
         <p class="contact-lede">I respond within 24 hours. Whether you're here to collaborate, research, or just curious — send a signal.</p>
 
         <div class="contact-emails">
-          <a href="mailto:sabastiandarko@outlook.com" class="contact-email-row">
+          <a href="mailto:sabastiandarko@outlook.com" class="contact-email-row glass-panel">
             <span class="cer-label">primary</span>
             <span class="cer-addr">sabastiandarko@outlook.com</span>
             <span class="cer-arrow">↗</span>
           </a>
-          <a href="mailto:adomdarko@gmail.com" class="contact-email-row">
+          <a href="mailto:adomdarko@gmail.com" class="contact-email-row glass-panel">
             <span class="cer-label">secondary</span>
             <span class="cer-addr">adomdarko@gmail.com</span>
             <span class="cer-arrow">↗</span>
@@ -466,7 +469,7 @@
       </div>
 
       <div class="contact-aside fade-in">
-        <div class="contact-card">
+        <div class="contact-card glass-panel">
           <div class="cc-icon"><i class="fas fa-satellite-dish"></i></div>
           <h3>transmission received</h3>
           <p>Click any email address to open your mail client directly. Signal travels fast out here.</p>
@@ -476,7 +479,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
